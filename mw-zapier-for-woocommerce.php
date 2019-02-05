@@ -3,8 +3,10 @@
 	Plugin Name: Zapier for WooCommerce
 	Description: Send order info to zapier
 	Version: 1.0
+  Author: Santiago Fernandez P
 	Text Domain: mw-zapier-for-woocommerce
 	Domain Path: /languages
+
 
   WC requires at least: 2.2
   WC tested up to: 2.3
