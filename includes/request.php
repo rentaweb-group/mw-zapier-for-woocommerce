@@ -16,6 +16,7 @@ function mwzfw_request($order_id){
   $data = array(
     'store id' => $setting[store_id],
     'order id' => $order_id,
+    'payment method' => $order->get_payment_method(),
     'date created' => $order->get_date_created()->format ('d/m/Y'),
     'shipping date' => current_time( 'd/m/Y' ),
     'first name' => $first_name,
