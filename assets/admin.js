@@ -70,13 +70,4 @@ jQuery(document).ready(function( $ ) {var i = $('.mwzfw-codhooks').attr('index')
   $('.mwzfw-remove-hook').click(function(){
     $(this).parent('div').html('');
   })
-
-  $('.mwzfw-test').click(function(){
-    var data = {
-			'action': 'mwzfw_request',
-		};
-    jQuery.post(ajaxurl, data, function(response) {
-			console.log(response);
-		});
-  });
 });

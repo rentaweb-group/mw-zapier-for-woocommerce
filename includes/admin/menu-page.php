@@ -59,7 +59,6 @@ function mwzfw_options_page_html () {
     <?php
 
     $setting = get_option('mwzfw_settings');
-    print_r($setting);
 }
 
 function mwzfw_settings_init() {
@@ -203,9 +202,6 @@ function mwzfw_order_field_cb() {
     </div>
     <div class="mwzfw-add-notcod-hook">
       <span class="dashicons dashicons-plus-alt"></span>
-    </div>
-    <div class="mwzfw-test button button-primary">
-      test
     </div>
   <?php
 }
