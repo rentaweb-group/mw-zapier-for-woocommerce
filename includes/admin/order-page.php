@@ -30,7 +30,7 @@ function mwzfw_process_order_meta_box_action( $order ) {
 
 	$data = array(
 		'store id' => $setting[store_id],
-		'order id' => $order_id,
+		'order id' => $order->get_id(),
 		'payment method' => $order->get_payment_method(),
 		'date created' => $order->get_date_created()->format ('d/m/Y'),
 		'shipping date' => current_time( 'd/m/Y' ),
