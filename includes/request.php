@@ -27,9 +27,10 @@ function mwzfw_request($order_id){
     'address 2' => $address_2,
     'customer email' => $order->get_billing_email(),
     'customer phone' => $order->get_billing_phone(),
-    'order total' => $order->get_total(),
-    'shipping total' => $order->get_shipping_total(),
-    'total tax' => $order->get_total_tax(),
+    'order_subtotal' => $order->get_subtotal(),
+    'order_total_tax' => $order->get_total_tax(),
+    'order_shipping_total' => $order->get_shipping_total(),
+    'order_total' => $order->get_total(),
   );
 
   $metadata = $order->get_meta_data();
