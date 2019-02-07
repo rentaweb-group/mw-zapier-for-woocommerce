@@ -28,6 +28,7 @@ function mwzfw_request($order_id){
     'customer email' => $order->get_billing_email(),
     'customer phone' => $order->get_billing_phone(),
     'order_subtotal' => $order->get_subtotal(),
+    'order_total_discount' => $order->get_total_discount(),
     'order_total_tax' => $order->get_total_tax(),
     'order_shipping_total' => $order->get_shipping_total(),
     'order_total' => $order->get_total(),
