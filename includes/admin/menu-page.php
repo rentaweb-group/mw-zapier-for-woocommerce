@@ -90,6 +90,12 @@ function mwzfw_settings_init() {
                       'mwzfw',
                       'mwzfw_settings_section'
                     );
+  add_settings_field( 'mwzfw_order_page_field',
+                      __('Hook for order page button', 'mw-zapier-for-woocommerce'),
+                      'mwzfw_order_page_field_cb',
+                      'mwzfw',
+                      'mwzfw_settings_section'
+                    );
 
 }
 add_action( 'admin_init', 'mwzfw_settings_init' );
@@ -213,5 +219,23 @@ function mwzfw_store_id_cb() {
       type="text"
       name="mwzfw_settings[store_id]"
       value="<?php echo isset( $setting[store_id]) ? esc_attr( $setting[store_id]) : ''; ?>">
+  <?php
+}
+
+function mwzfw_order_page_field_cb(){
+  $setting = get_option('mwzfw_settings');
+  ?>
+     <div>
+        <label>Hook: </label>
+        <input
+          type="password"
+          name="mwzfw_settings[actionhook]"
+          value="<?php echo isset( $setting[actionhook] ) ? esc_attr( $setting[actionhook] ) : ''; ?>">
+        <label>Description: </label>
+        <input
+          type="text"
+          name="mwzfw_settings[actionhookdescription]"
+          value="<?php echo isset( $setting[actionhookdescription] ) ? esc_attr( $setting[actionhookdescription] ) : ''; ?>">
+      </div>
   <?php
 }

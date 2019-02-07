@@ -35,5 +35,6 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
   add_action( 'admin_enqueue_scripts', 'mwzfw_enqueue_admin_scripts' );
 
   require_once 'includes/admin/menu-page.php';
+  require_once 'includes/admin/order-page.php';
   require_once 'includes/request.php';
 }
