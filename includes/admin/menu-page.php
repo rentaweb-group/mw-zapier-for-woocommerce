@@ -91,7 +91,7 @@ function mwzfw_settings_init() {
                       'mwzfw_settings_section'
                     );
   add_settings_field( 'mwzfw_order_page_field',
-                      __('Hook for order page button', 'mw-zapier-for-woocommerce'),
+                      __('Order page action hook', 'mw-zapier-for-woocommerce'),
                       'mwzfw_order_page_field_cb',
                       'mwzfw',
                       'mwzfw_settings_section'
