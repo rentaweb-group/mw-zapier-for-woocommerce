@@ -62,6 +62,5 @@ function mwzfw_request($order_id){
       );
     }
   }
-  wp_die();
 }
 add_action( 'woocommerce_order_status_completed','mwzfw_request');
